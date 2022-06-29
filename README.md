@@ -19,12 +19,12 @@ struct emp
     char name[100];
     char desgn[10];
     float sal;
-    char jdate[8];
+    char edate[8];
     char gender[10];
     char branch[50];
-    char psaddr[200];
+    char peradds[200];
     char prtaddr[200];
-    char phone[15];
+    char dialthing[15];
     char mail[20];
 };
 
@@ -225,18 +225,18 @@ while(another=='y'||another=='Y')
 
     printf("\n\n\t\tEnter Present Address: ");
     fflush(stdin);
-    fgets(e.psaddr,200,stdin);
-    e.psaddr[strlen(e.psaddr)-1]='\0';
+    fgets(e.peradds,200,stdin);
+    e.peradds[strlen(e.peradds)-1]='\0';
 
     printf("\n\n\t\tEnter Permanant Address: ");
     fflush(stdin);
     fgets(e.prtaddr,200,stdin);
     e.prtaddr[strlen(e.prtaddr)-1]='\0';
 
-    printf("\n\n\t\tEnter Phone: ");
+    printf("\n\n\t\tEnter dialthing: ");
     fflush(stdin);
-    fgets(e.phone,50,stdin);
-    e.phone[strlen(e.phone)-1]='\0';
+    fgets(e.dialthing,50,stdin);
+    e.dialthing[strlen(e.dialthing)-1]='\0';
 
     printf("\n\n\t\tEnter E-mail: ");
     fflush(stdin);
@@ -369,18 +369,18 @@ if(flag==1)
 
     printf("\n\n\t\tEnter Present Address: ");
     fflush(stdin);
-    fgets(e.psaddr,200,stdin);
-    e.psaddr[strlen(e.psaddr)-1]='\0';
+    fgets(e.peradds,200,stdin);
+    e.peradds[strlen(e.peradds)-1]='\0';
 
     printf("\n\n\t\tEnter Permanant Address: ");
     fflush(stdin);
     fgets(e.prtaddr,200,stdin);
     e.prtaddr[strlen(e.prtaddr)-1]='\0';
 
-    printf("\n\n\t\tEnter Phone: ");
+    printf("\n\n\t\tEnter dialthing: ");
     fflush(stdin);
-    fgets(e.phone,50,stdin);
-    e.phone[strlen(e.phone)-1]='\0';
+    fgets(e.dialthing,50,stdin);
+    e.dialthing[strlen(e.dialthing)-1]='\0';
 
     printf("\n\n\t\tEnter E-mail: ");
     fflush(stdin);
@@ -414,9 +414,9 @@ printf("\n\t\t\t\List  of Employees");
         printf("\n\n\t\tGENDER : %s",e.gender);
         printf("\n\n\t\tBRANCH : %s",e.branch);
         printf("\n\n\t\tSALARY : %.2f",e.sal);
-        printf("\n\n\t\tPRESENT ADDRESS : %s",e.psaddr);
+        printf("\n\n\t\tPRESENT ADDRESS : %s",e.peradds);
         printf("\n\n\t\tPERMANANT ADDRESS : %s",e.prtaddr);
-        printf("\n\n\t\tPHONE : %s",e.phone);
+        printf("\n\n\t\tdialthing : %s",e.dialthing);
         printf("\n\n\t\tE-MAIL : %s\n\n\t",e.mail);
         printChar('=',65);
     }
@@ -458,9 +458,9 @@ if(flag==1)
         printf("\n\n\t\tDESIGNATION : %s",e.desgn);
         printf("\n\n\t\tBRANCH : %s",e.branch);
         printf("\n\n\t\tSALARY: %.2f",e.sal);
-        printf("\n\n\t\tPRESENT ADDRESS : %s",e.psaddr);
+        printf("\n\n\t\tPRESENT ADDRESS : %s",e.peradds);
         printf("\n\n\t\tPERMANANT ADDRESS : %s",e.prtaddr);
-        printf("\n\n\t\tPHONE : %s",e.phone);
+        printf("\n\n\t\tdialthing : %s",e.dialthing);
         printf("\n\n\t\tE-MAIL : %s",e.mail);
 
         printChar('=',65);
@@ -493,7 +493,7 @@ void maleemp(FILE * fp)
         printf("\n\n\t\tID : %d",e.id);
         printf("\n\n\t\tNAME : %s",e.name);
         printf("\n\n\t\tDESIGNATION : %s",e.desgn);
-        printf("\n\n\t\tPHONE : %s",e.phone);
+        printf("\n\n\t\tdialthing : %s",e.dialthing);
         printChar('-',65);
         }
     }
@@ -522,7 +522,7 @@ void femaleemp(FILE * fp)
         printf("\n\n\t\tID : %d",e.id);
         printf("\n\n\t\tNAME : %s",e.name);
         printf("\n\n\t\tDESIGNATION : %s",e.desgn);
-        printf("\n\n\t\tPHONE : %s",e.phone);
+        printf("\n\n\t\tdialthing : %s",e.dialthing);
         printChar('-',65);
         }
     }
@@ -550,7 +550,7 @@ void frmdhaka(FILE * fp)
         printf("\n\n\t\tID : %d",e.id);
         printf("\n\n\t\tNAME : %s",e.name);
         printf("\n\n\t\tDESIGNATION : %s",e.desgn);
-        printf("\n\n\t\tPHONE : %s",e.phone);
+        printf("\n\n\t\tdialthing : %s",e.dialthing);
         printf("\n\n\t\tE-MAIL : %s",e.mail);
         printChar('=',65);
         }
@@ -578,7 +578,7 @@ void frmors(FILE * fp)
         printf("\n\n\t\tID : %d",e.id);
         printf("\n\n\t\tNAME : %s",e.name);
         printf("\n\n\t\tDESIGNATION : %s",e.desgn);
-        printf("\n\n\t\tPHONE : %s",e.phone);
+        printf("\n\n\t\tdialthing : %s",e.dialthing);
         printf("\n\n\t\tE-MAIL : %s",e.mail);
         printChar('=',65);
         }
@@ -605,7 +605,7 @@ printf("\n\t\t\t\Display Basic Information");
         printf("\n\n\t\tDESIGNATION : %s",e.desgn);
         printf("\n\n\t\tGENDER : %s",e.gender);
         printf("\n\n\t\tBRANCH : %s",e.branch);
-        printf("\n\n\t\tPHONE : %s",e.phone);
+        printf("\n\n\t\tdialthing : %s",e.dialthing);
         printf("\n\n\t\tE-MAIL : %s\n\n\t",e.mail);
         printChar('=',65);
     }
@@ -629,7 +629,7 @@ printf("\n\t\t\t\Basic Contact Information");
         printf("\n\n\t\tID : %d",e.id);
         printf("\n\n\t\tNAME : %s",e.name);
         printf("\n\n\t\tDESIGNATION : %s",e.desgn);
-        printf("\n\n\t\tPHONE : %s",e.phone);
+        printf("\n\n\t\tdialthing : %s",e.dialthing);
         printf("\n\n\t\tE-MAIL : %s\n\n\t",e.mail);
         printChar('=',65);
     }
@@ -657,7 +657,7 @@ void mainbr(FILE * fp)
         printf("\n\n\t\tID : %d",e.id);
         printf("\n\n\t\tNAME : %s",e.name);
         printf("\n\n\t\tDESIGNATION : %s",e.desgn);
-        printf("\n\n\t\tPHONE : %s",e.phone);
+        printf("\n\n\t\tdialthing : %s",e.dialthing);
         printf("\n\n\t\tE-MAIL : %s\n\t",e.mail);
         printChar('=',65);
         }
@@ -685,7 +685,7 @@ void otherbr(FILE * fp)
         printf("\n\n\t\tID : %d",e.id);
         printf("\n\n\t\tNAME : %s",e.name);
         printf("\n\n\t\tDESIGNATION : %s",e.desgn);
-        printf("\n\n\t\tPHONE : %s",e.phone);
+        printf("\n\n\t\tdialthing : %s",e.dialthing);
         printf("\n\n\t\tE-MAIL : %s\n\n\t",e.mail);
         printChar('=',65);
         }
